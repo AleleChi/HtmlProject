@@ -1,14 +1,18 @@
-*{
+/* Reset and Base Styling */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Work sans-serif, Arial, Helvetica, sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
-header {
+/* Navbar Styling */
+.main-header {
     background-color: #f3eeee;
     padding: 20px 0;
     position: sticky;
@@ -24,18 +28,161 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li a{
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
     text-decoration: none;
     font-size: 17px;
     color: #481a1a;
     text-transform: uppercase;
-    padding: 5px 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4b4949;
+    background-color: #bee0eb;
+    border-radius: 10px;
+}
+
+/* Hero Section */
+.hero-container {
+    background-image: url(./assets/light-image1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(71, 70, 70);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* About Section */
+#about video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Work Section */
+#work h2{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+#work ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#work ul li {
+    margin: 10px 0;
+}
+
+#work a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#work a:hover {
+    text-decoration: underline;
+}
+
+/* Resume Section */
+
+#resume table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 50px;
+   position: relative;
+  left: 320px;
+}
+
+#resume table, #resume th, #resume td {
+    border: 1px solid #787878;
+}
+
+#resume th, #resume td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Contact Section */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    text-align: left;
+    display: block;
+    margin-top: 15px;
     font-weight: bold;
 }
 
- nav ul li a:hover{
-    color: #f8f8f8;
-    background-color: #725555;
-    padding: 14px;
-    border-radius: 10px;
- }
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #696969;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #f3eeee;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+footer nav ul li a {
+    color: #481a1a;
+}
+
+footer nav ul li a:hover {
+    color: #4b4949;
+}
